@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transaction History</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Transaction History</h1>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/receive}">Receive</a>
+        <a th:href="@{/send}">Send</a>
+        <a th:href="@{/transactions}">Transactions</a>
+    </nav>
+    <ul>
+        <li th:each="tx : ${transactions}" th:text="${tx}"></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bitcoin Wallet</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Bitcoin Wallet</h1>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/receive}">Receive</a>
+        <a th:href="@{/send}">Send</a>
+        <a th:href="@{/transactions}">Transactions</a>
+    </nav>
+    <h2>Wallet Balance: <span th:text="${balance}"></span></h2>
+</body>
+</html>
